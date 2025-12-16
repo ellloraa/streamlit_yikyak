@@ -43,7 +43,7 @@ if paper_path.exists():
     st.markdown("")
     with paper_path.open("rb") as f:
         st.download_button(
-            label="Download our research paper (PDF)",
+            label="You can download our research paper here for more information!",
             data=f,
             file_name="Predicting_Controversiality_and_Engagement_YikYak.pdf",
             mime="application/pdf",
