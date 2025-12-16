@@ -80,8 +80,8 @@ if st.button("Predict") and text.strip():
     st.progress(proba)
 
     if proba < 0.33:
-        st.info("Low likelihood of engagement. This is probably a quiet yak. Try being more specific?")
+        st.info("Low likelihood of engagement. Try being more specific?")
     elif proba < 0.66:
-        st.warning("Medium likelihood of engagement. Could flop, but then again...could soar. Add a hook or a question.")
+        st.warning("Medium likelihood of engagement. Could flop, but then again...could soar.")
     else:
-        st.success("High likelihood of engagement!!!! Now this one might just Yak. Proceed responsibly towards YikYak glory :)")
+        st.success("High likelihood of engagement!!!! YikYak glory awaits :)")
