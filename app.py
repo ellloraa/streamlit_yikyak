@@ -12,7 +12,7 @@ def load_pipeline():
 pipe = load_pipeline()
 
 # ---------- HEADER ----------
-st.title("Will Your YikYak Yak?")
+st.title("How Engaging is Your YikYak?")
 st.caption("CSC 371 · Machine Learning · Davidson College")
 
 st.markdown("---")
