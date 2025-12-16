@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 from pathlib import Path
 
-st.set_page_config(page_title="How Engaging is Your YikYak?", page_icon="🔥", layout="centered")
+st.set_page_config(page_title="Predict the Yik", page_icon="🔥", layout="centered")
 
 @st.cache_resource
 def load_pipeline():
@@ -83,4 +83,4 @@ if st.button("Predict") and text.strip():
     elif proba < 0.66:
         st.warning("Medium likelihood of engagement. Equal chance of either flopping or soaring.")
     else:
-        st.success("HIGH LIKELIHOOD OF ENGAGEMENT. YIKYAK GLORY AWAITS.")
+        st.success("High likelihood of engagement! YikYak glory awaits!")
