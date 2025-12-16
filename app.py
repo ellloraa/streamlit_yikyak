@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 from pathlib import Path
 
-st.set_page_config(page_title="Will Your YikYak Yak?", page_icon="🔥", layout="centered")
+st.set_page_config(page_title="How Engaging is Your YikYak?", page_icon="🔥", layout="centered")
 
 @st.cache_resource
 def load_pipeline():
