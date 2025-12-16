@@ -40,6 +40,7 @@ with st.expander("A Brief Warning on Accuracy"):
         "This is a class project demo, not a guarantee your post will blow up. "
         "In our evaluation, the logistic regression model had ROC AUC ≈ 0.71, and it struggles with low precision/recall. "
         "Basically, it has trouble predicting the minority (high enagagement) class. "
+        "The live demo also uses a simplified feature set. Some real-time activity features used in evaluation are fixed or unavailable at prediction time, so the app represents a constrained approximation of the full model."
     )
 
 # ---------- PAPER ----------
