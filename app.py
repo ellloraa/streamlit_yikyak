@@ -18,8 +18,8 @@ st.title("How Engaging is Your YikYak?")
 st.markdown("---")
 
 # ---------- INTRO ----------
-with st.container():
-    st.subheader("About the Project")
+
+with st.expander("About the Project"):
     st.markdown(
         """
 Hello! This is a demo app that employs a pipeline developed in a CSC 371 (Machine Learning) class final.
@@ -33,8 +33,9 @@ Our most successful model was a TF-IDF + Logistic Regression model, which this a
     )
 
 
+
 # ---------- WARNING ----------
-with st.expander("⚠️ A Brief Warning on Accuracy"):
+with st.expander("A Brief Warning on Accuracy"):
     st.write(
         "This is a class project demo, not a guarantee your post will blow up. "
         "In our evaluation, the logistic regression model had ROC AUC ≈ 0.71, and it struggles with low precision/recall. "
