@@ -39,8 +39,7 @@ with st.expander("A Brief Warning on Accuracy"):
     st.write(
         "This is a class project demo, not a guarantee your post will blow up. "
         "In our evaluation, the logistic regression model had ROC AUC ≈ 0.71, and it struggles with low precision/recall. "
-        "Basically, it has trouble predicting the minority (high enagagement class). "
-        "Plus, virality is completely randomized, so take that into account when yakking!"
+        "Basically, it has trouble predicting the minority (high enagagement) class. "
     )
 
 # ---------- PAPER ----------
@@ -80,8 +79,8 @@ if st.button("Predict") and text.strip():
     st.progress(proba)
 
     if proba < 0.33:
-        st.info("Low likelihood of engagement. Try being more specific?")
+        st.info("Low likelihood of engagement. Try being more specific and click here for the stats on what makes a post engaging.")
     elif proba < 0.66:
-        st.warning("Medium likelihood of engagement. Could flop, but then again...could soar.")
+        st.warning("Medium likelihood of engagement. Equal chance of either flopping or soaring.")
     else:
-        st.success("High likelihood of engagement!!!! YikYak glory awaits :)")
+        st.success("HIGH LIKELIHOOD OF ENGAGEMENT. YIKYAK GLORY AWAITS.")
