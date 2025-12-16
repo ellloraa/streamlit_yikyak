@@ -43,7 +43,7 @@ with st.expander("A Brief Warning on Accuracy"):
     )
 
 # ---------- PAPER ----------
-paper_path = Path("assets/research_paper.pdf")
+paper_path = Path("assets/ML_FINAL___Ellora_and_Riana (11).pdf")
 if paper_path.exists():
     st.markdown("")
     with paper_path.open("rb") as f:
